@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int m,n,i,j;
+    scanf("%d %d",&m,&n);  //输入m行，n列 
+    int a[m][n];
+    for(i=0;i<m;i++){  //a[i][m]   i代表行   
+        sum=0;					//记得让sum 计了m行的和后，变为0 
+        for(j=0;j<n;j++){
+            scanf("%d",&a[i][j]);  //把数据依次读入a[0][m] ，m（代表列）每次加 1
+            sum+=a[i][j];
+        }
+        printf("%d\n",sum);
+    }
+    return 0;
+}
